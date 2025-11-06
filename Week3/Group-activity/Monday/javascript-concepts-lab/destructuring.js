@@ -1,8 +1,8 @@
-// const person = {name : 'Alice', age:30, city : 'New York'};
-// const {name, age} = person;
+const person = {name : 'Alice', age:30, city : 'New York'};
+const {name, age} = person;
 
-// console.log('Name : ', name);
-// console.log('age : ', age);
+console.log('Name : ', name);
+console.log('age : ', age);
 
 
 //Optional: Example 1 - Extracting Nested Properties:
@@ -15,8 +15,8 @@
 // console.log('Occupation:', occupation);
 
 
-function greetUser({ name, age }) {
-  console.log(`Hello, ${name}! You're ${age} years old.`);
-}
+// function greetUser({ name, age }) {
+//   console.log(`Hello, ${name}! You're ${age} years old.`);
+// }
 
-greetUser({ name: 'Bob', age: 25 });
+// greetUser({ name: 'Bob', age: 25 });
