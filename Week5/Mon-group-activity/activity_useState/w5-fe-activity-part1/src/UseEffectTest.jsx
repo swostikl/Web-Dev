@@ -19,6 +19,8 @@ const UseEffectTest = () => {
     const myInterval = setInterval(() => {
       console.log(`UseEffect3 with interval number ${count} is running`);
     }, 1000);
+
+
     return () => {
       console.log(
         `UseEffect3 cleanup ran.\nsetInterval number ${count} is being cleared out`
@@ -30,10 +32,13 @@ const UseEffectTest = () => {
   return (
     <div>
       {console.log("rendered or re-rendered")}
+      
       <h1>UseEffectTest Component</h1>
+
       <button onClick={() => setToggleOne(!toggleOne)}>ToggleOne</button>
       <button onClick={() => setToggleTwo(!toggleTwo)}>toggleTwo</button>
       <button onClick={() => setCount((e) => e + 1)}>Count</button>
+      
     </div>
   );
 };
